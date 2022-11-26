@@ -1,11 +1,15 @@
-import React from 'react';
-import Routes from '../routes/Routes';
+import React, { Suspense, lazy } from 'react';
+import Loader from '../components/Progressbar';
 
+
+const Routes = lazy(() => import('../routes/Routes'));
 
 const App = () => {
   return (
     <>
-      <Routes />
+      <Suspense fallback={<Loader />}>
+        <Routes />
+      </Suspense>
     </>
   );
 }
