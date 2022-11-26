@@ -22,10 +22,10 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     &::-webkit-scrollbar {
-        width: ${rem(14)};
+        width: ${rem(8)};
     }
     &::-webkit-scrollbar-track {
-        background-color: rgba(223, 223, 223, 0.502);
+        background-color: rgba(223, 223, 223, 0);
     }
     &::-webkit-scrollbar-button {
         display: none;
@@ -33,7 +33,7 @@ html {
     &::-webkit-scrollbar-thumb {
         display: block;
         border-radius: ${rem(50)};
-        background: var(--primaryAccent);
+        background: var(--softBlue);
     }
 }
 body,
@@ -42,9 +42,9 @@ body,
     width: 100%;
     height: 100%;
     font-size: ${rem(16)};
-    font-family: 'Poppins Light';
-    background: inherit;
-    color: inherit;
+    font-family: 'outfit-variable';
+    background: var(--bgMain);
+    color: var(--white);
     z-index: inherit;
     user-select: none;
 }

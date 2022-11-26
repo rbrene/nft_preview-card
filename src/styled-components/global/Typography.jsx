@@ -49,6 +49,8 @@ export const Small = styled(animated.small)`
 
 export const P = styled(animated.p)`
     position: relative;
+    font-size: ${rem(18)};
+    color: var(--softBlue);
     z-index: inherit;
 `;
 
